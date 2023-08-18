@@ -1,0 +1,16 @@
+/* Remove unnecessary footer section */
+footer, /* footer */
+.r-1jocfgc, /* add column */
+div[data-testid="DMDrawer"] /* dm at bottom */ {
+  display: none !important;
+}
+
+/* Shrink border line between columns (column separator) */
+.r-193dp3 {
+  margin-left: 1px !important;
+}
+
+/* Remove separator (border line) in column */
+.css-1dbjc4n {
+  border: none !important;
+}

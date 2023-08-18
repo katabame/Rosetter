@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Rosetter",
+  "version": "1.3",
+  "description": "X Pro Tweaker",
+  "author": "ayame@kataba.me",
+  "homepage_url": "https://github.com/katabame/Rosetter",
+  "content_scripts": [
+    {
+      "matches": ["https://*.tweetdeck.twitter.com/*"],
+      "js": ["bundled.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [{
+    "resources": ["bundled.css"],
+    "matches": ["https://tweetdeck.twitter.com/*"]
+  }]
+}
